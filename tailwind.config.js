@@ -7,6 +7,12 @@ module.exports = {
         ubuntu: ['Ubuntu', 'sans-serif'],
         lato: ["Lato", 'sans-serif'],
       },
+
+      colors: {
+        logic: {
+          pest: '#1b8b7e'
+        }
+      }
     },
   },
   plugins: [],

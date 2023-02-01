@@ -122,18 +122,21 @@
  .arrow:hover{
   color: #ffffff;
   background-color: #0D4841;
-  /* transition-duration: 300ms; */
  }
 
  .nav-bar a::before {
   content: '';
   height: 3px;
   width: 0%;
-  background: #ffc301;
+  background: #1b8b7e;
   position: absolute;
   left: 0;
   top:33px;
   bottom: -1;
   transition: 0.4s;
+ }
+
+ .nav-bar a:hover::before {
+  width: 100%;
  }
 }

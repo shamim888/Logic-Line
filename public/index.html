@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Line</title>
+    <link rel="stylesheet" href="./tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+</head>
+<body>
+    <header>
+      <!-- ===================head-1==================== -->
+      <section class="place bg-color-1">
+        <div class=" relative container mx-auto px-4 py-4">
+          <div class="row">
+            <div class="w-full px-4 flex flex-wrap items-center justify-center gap-3 sm:gap-8">
+              <h3 class=" font-bold text-xl">We are hiring!</h3>
+              <a href="#" class=" text-base text-gray-700">Learn more <span><i class="fa-solid fa-caret-right"></i></span></a>
+            </div>
+            <span class="cross absolute top-1/3 right-4 cursor-pointer"><i class="fa-solid fa-xl fa-square-xmark"></i></span>
+          </div>
+        </div>
+      </section>
+      <!-- ===================head-1 End==================== -->
+      <!-- ================Navbar====================== -->
+      <nav class=" bg-color-2">
+        <div class=" relative container mx-auto px-4 py-2">
+          <div class="row items-center">
+            <div class="w-4/12 px-4 flex items-center justify-start">
+              <a href="#"><img src="../image/Logo1.png" alt="Logo" class=" w-44"></a>
+            </div>
+            <div class="w-4/12 px-4">
+              <ul class=" nav-bar a::before hidden md:flex flex-wrap items-center justify-between">
+                <li class=" py-3"><a href="#" class=" relative">About</a></li>
+                <li class=" py-3"><a href="#" class=" relative">Pricing</a></li>
+                <li class=" py-3"><a href="#" class=" relative">Features</a></li>
+                <li class=" py-3"><a href="#" class=" relative">Blog</a></li>
+              </ul>
+            </div>
+            <div class="w-4/12 px-4">
+              <ul class=" hidden md:flex flex-wrap items-center justify-end gap-4">
+                <li><a href="#" class=" px-4 py-3">Login</a></li>
+                <li><a href="#" class=" px-6 py-3 btn-col-1  transition ease-in-out duration-300 rounded-md text-white">Get Started</a></li>
+              </ul>
+            </div>
+            <!-- =================Mobile Menu Button=================== -->
+            <span class="mobile-menu-btn cursor-pointer absolute block md:hidden top-1/3 right-4">
+              <i class="fas fa-bars fa-2xl text-color-1"></i>
+            </span>
+            <!-- =================Mobile Menu Button End=================== -->
+          </div>
+          <!-- ========================Mobile Menu=============================== -->
+          <div class="mobile-menu hidden md:hidden relative">
+            <ul class=" z-30 absolute top-2 w-full divide-y divide-bg-color-2 list rounded-sm shadow-xl">
+              <li class=""><a href="#" class=" relative flex p-4">About</a></li>
+              <li class=""><a href="#" class=" relative flex p-4">Pricing</a></li>
+              <li class=""><a href="#" class=" relative flex p-4">Features</a></li>
+              <li class=""><a href="#" class=" relative flex p-4">Blog</a></li>
+            </ul>
+          </div>
+          <!-- ========================Mobile Menu END=============================== -->
+        </div>
+      </nav>
+      <!-- ================Navbar End====================== -->
+      <!-- =====================Hero Section================== -->
+      <section class=" bg-color-2">
+        <div class="container mx-auto px-4 py-10">
+          <div class="row items-center">
+            <div class=" w-full md:w-6/12 px-4 space-y-4 md:space-y-6">
+              <p class=" text-gradient font-bold text-base sm:text-lg md:text-xl tracking-widest">CUSTOMER SERVICE</p>
+              <h2 class=" font-bold text-lg md:text-2xl lg:text-4xl">Take your customer experience to the next level</h2>
+              <p class=" text-base text-gray-700 pb-8 lg:pb-0 pr-8 md:pr-0">We are dedicated to helping businesses improve the experience they provide for their customers.</p>
+            </div>
+            <div class=" w-full md:w-6/12 px-4">
+                <div class="flex justify-center md:justify-end items-center">
+                    <img src="../image/hero.jpg" alt="hero">
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =====================Hero Section End================== -->
+    </header>
+
+    <!-- =====================Trusted Start====================== -->
+    <section class=" py-10">
+      <div class="container mx-auto px-4">
+        <div class="row justify-center space-y-8">
+          <div class="w-full">
+            <h3 class=" text-center text-gradient font-bold text-base sm:text-lg md:text-xl tracking-widest">TRUSTED BY</h3>
+          </div>
+          <div class=" px-4">
+            <a href="#"><img src="../image/logoipsum-254.svg" alt=""></a>
+          </div>
+          <div class=" px-4">
+            <a href="#"><img src="../image/logoipsum-263.svg" alt=""></a>
+          </div>
+          <div class=" px-4">
+            <a href="#"><img src="../image/logoipsum-254.svg" alt=""></a>
+          </div>
+          <div class=" px-4">
+            <a href="#"><img src="../image/logoipsum-263.svg" alt=""></a>
+          </div>
+          <div class=" px-4">
+            <a href="#"><img src="../image/logoipsum-254.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =====================Trusted End====================== -->
+
+    <!-- =========================Dedicated Start=========================== -->
+    <section class=" py-10">
+      <div class="container mx-auto px-4">
+        <div class="row items-center">
+          <div class="w-full md:w-6/12 px-4">
+            <div class="flex justify-center md:justify-start items-center">
+                <img src="../image/pexels-1.jpg" alt="pexels1">
+            </div>
+          </div>
+          <div class=" w-full md:w-6/12 px-4 space-y-4 md:space-y-6 pt-6 md:pt-0">
+            <p class=" text-gradient font-bold text-base sm:text-lg md:text-xl tracking-widest">FEATURE</p>
+            <h2 class=" font-bold text-lg md:text-2xl lg:text-4xl">Dedicated team of customer satisfaction experts</h2>
+            <p class=" text-lg text-gray-900 pb-8 lg:pb-0">We are dedicated to helping businesses improves the experience they provide for their customers.</p>
+            <div class=" border-b-2 border-gray-300"></div>
+            <div class=" flex flex-nowrap">
+                <span class=" text-color-1 pr-4"><i class="fa-sharp fa-solid fa-2xl fa-circle-check"></i></span>
+                <p class=" text-base text-gray-700">Comprehensive range of service</p>
+            </div>
+            <div class=" flex flex-nowrap">
+                <span class=" text-color-1 pr-4"><i class="fa-sharp fa-solid fa-2xl fa-circle-check"></i></span>
+                <p class=" text-base text-gray-700">Tailored solutions for unique business neeeds</p>
+            </div>
+            <div class=" flex flex-nowrap">
+                <span class=" text-color-1 pr-4"><i class="fa-sharp fa-solid fa-2xl fa-circle-check"></i></span>
+                <p class=" text-base text-gray-700">Proven track record of success</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================Dedicated End=========================== -->
+    <!-- =========================Tailored Start=========================== -->
+    <section class=" py-10">
+      <div class="container mx-auto px-4">
+        <div class="row items-center">
+          <div class=" order-2 md:order-1 w-full md:w-6/12 px-4 space-y-4 md:space-y-6 pt-6 md:pt-0">
+            <p class=" text-gradient font-bold text-base sm:text-lg md:text-xl tracking-widest">FEATURE</p>
+            <h2 class=" font-bold text-lg md:text-2xl lg:text-4xl">Tailored solution for unique business needs</h2>
+            <p class=" text-lg text-gray-900 pb-8 lg:pb-0">We understand that every business is unique, and we tailor our services to meet the specific needs of your business</p>
+            <div class=" border-b-2 border-gray-300"></div>
+            <div>
+              <div class=" relative px-4 py-8 bg-color-2 rounded-xl w-72 lg:w-96">
+                <p class=" text-gray-900">"As a business owener, I was looking for a way to improve the customer experience at my company. I came across sense and dedication to give them a try. I am so glad I did!"</p>
+                <span class=" -z-10 absolute h-12 w-12 bg-color-2 transform rotate-45 translate-x-1/3 translate-y-2"></span>
+              </div>
+              <div class=" flex flex-nowrap gap-4 pl-7 mt-10">
+                <div class="">
+                  <img src="../image/dp.jpg" alt="proPic" class=" w-14 rounded-full">
+                </div>
+                <div>
+                  <p class=" text-xl font-bold">Michael Scott</p>
+                  <p class=" text-gray-700">CEO, WealthNation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" order-1 md:order-2 w-full md:w-6/12 px-4">
+            <div class="flex justify-center md:justify-end items-center">
+                <img src="../image/pexels-3.jpg" alt="pexels2">
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================Tailored End=========================== -->
+    <!-- =========================CRM Start=========================== -->
+    <section class=" py-10 bg-color-5">
+        <div class="container mx-auto px-4">
+            <div class="row">
+                <div class="w-full px-4 text-center space-y-4 lg:px-96">
+                    <p class=" text-gradient font-bold text-base sm:text-lg md:text-xl tracking-widest">FEATURES</p>
+                    <h2 class=" font-bold text-lg md:text-2xl lg:text-4xl text-white">A powerful CRM that handles it all</h2>
+                    <p class=" text-lg text-white pb-16">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class=" w-full md:w-4/12 px-4 pb-4 md:pb-0">
+                    <div class=" space-y-4 bg-color-3 p-8">
+                        <div class=" w-12 h-12 pt-3 rounded-sm bg-color-2">
+                            <i class=" p-2 fa-solid fa-2xl fa-headset"></i>
+                        </div>
+                        <h3 class=" text-white font-bold text-xl">Customer Support</h3>
+                        <p class=" text-white">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <div class="py-4">
+                            <a href="#" class=" text-white">Learn more <span><i class="fa-solid fa-caret-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-full md:w-4/12 px-4 pb-4 md:pb-0">
+                    <div class=" space-y-4 bg-color-3 p-8">
+                        <div class=" w-12 h-12 pt-3 rounded-sm bg-color-2">
+                            <i class=" p-2 fa-solid fa-2xl fa-headset"></i>
+                        </div>
+                        <h3 class=" text-white font-bold text-xl">Employee Experience</h3>
+                        <p class=" text-white">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <div class="py-4">
+                            <a href="#" class=" text-white">Learn more <span><i class="fa-solid fa-caret-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-full md:w-4/12 px-4">
+                    <div class=" space-y-4 bg-color-3 p-8">
+                        <div class=" w-12 h-12 pt-3 rounded-sm bg-color-2">
+                            <i class=" p-2 fa-solid fa-2xl fa-headset"></i>
+                        </div>
+                        <h3 class=" text-white font-bold text-xl">Qualifies Leads</h3>
+                        <p class=" text-white">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <div class="py-4">
+                            <a href="#" class=" text-white">Learn more <span><i class="fa-solid fa-caret-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full py-10">
+                    <div class=" flex items-center justify-center">
+                        <a href="#" class=" px-6 py-3 btn-col-1  transition ease-in-out duration-300 rounded-md text-white">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========================CRM End=========================== -->
+    <!-- =========================Testimonials Start=========================== -->
+    <section class=" py-10 overflow-hidden">
+      <div class="container mx-auto px-4">
+        <div class="row items-center">
+          <div class="w-full px-4 flex justify-between items-center pb-10">
+            <div class=" space-y-4 md:space-y-6">
+              <p class=" text-gradient font-bold text-sm sm:text-lg md:text-xl tracking-widest">TESTIMONIALS</p>
+              <h2 class=" font-bold text-lg sm:text-2xl lg:text-4xl">What our clients</br> say about us</h2>
+            </div>
+            <div class="">
+              <ul class=" flex justify-end gap-4">
+                <li class=""><a href="#" class=" px-2 py-2 ease-in duration-300 arrow"><i class="fa fa-2xl fa-arrow-left"></i></a></li>
+                <li class=""><a href="#" class=" px-2 py-2 ease-in duration-300 arrow"><i class="fa fa-2xl fa-arrow-right"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="my-slider w-full">
+            <div class=" px-4 max-w-md">
+              <div class=" p-4 space-y-8 border border-gray-900">
+                <div class=" flex flex-nowrap">
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                </div>
+                <p class=" text-gray-900">We have been working with Sense for the past year and have seen a significant improvement in our customer satisfaction levels. Their term of exparts provide valuable insights and guidance that helped us make important changes to our customer service processes. We are extremely satisfied with the results and would highly recommend Sense to any business looking to improve their customer experience.</p>
+                <div class=" flex flex-nowrap gap-4 py-10">
+                  <div class="">
+                    <img src="../image/dp.jpg" alt="proPic" class=" w-14 rounded-full">
+                  </div>
+                  <div>
+                    <p class=" text-xl font-bold">Michael Scott</p>
+                    <p class=" text-gray-700">CEO, WealthNation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=" px-4 max-w-md">
+              <div class=" p-4 space-y-8 border border-gray-900">
+                <div class=" flex flex-nowrap">
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                </div>
+                <p class=" text-gray-900">We have been working with Sense for the past year and have seen a significant improvement in our customer satisfaction levels. Their term of exparts provide valuable insights and guidance that helped us make important changes to our customer service processes. We are extremely satisfied with the results and would highly recommend Sense to any business looking to improve their customer experience.</p>
+                <div class=" flex flex-nowrap gap-4 py-10">
+                  <div class="">
+                    <img src="../image/dp.jpg" alt="proPic" class=" w-14 rounded-full">
+                  </div>
+                  <div>
+                    <p class=" text-xl font-bold">Michael Scott</p>
+                    <p class=" text-gray-700">CEO, WealthNation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=" px-4 max-w-md">
+              <div class=" p-4 space-y-8 border border-gray-900">
+                <div class=" flex flex-nowrap">
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                </div>
+                <p class=" text-gray-900">We have been working with Sense for the past year and have seen a significant improvement in our customer satisfaction levels. Their term of exparts provide valuable insights and guidance that helped us make important changes to our customer service processes. We are extremely satisfied with the results and would highly recommend Sense to any business looking to improve their customer experience.</p>
+                <div class=" flex flex-nowrap gap-4 py-10">
+                  <div class="">
+                    <img src="../image/dp.jpg" alt="proPic" class=" w-14 rounded-full">
+                  </div>
+                  <div>
+                    <p class=" text-xl font-bold">Michael Scott</p>
+                    <p class=" text-gray-700">CEO, WealthNation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=" px-4 max-w-md">
+              <div class=" p-4 space-y-8 border border-gray-900">
+                <div class=" flex flex-nowrap">
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                </div>
+                <p class=" text-gray-900">We have been working with Sense for the past year and have seen a significant improvement in our customer satisfaction levels. Their term of exparts provide valuable insights and guidance that helped us make important changes to our customer service processes. We are extremely satisfied with the results and would highly recommend Sense to any business looking to improve their customer experience.</p>
+                <div class=" flex flex-nowrap gap-4 py-10">
+                  <div class="">
+                    <img src="../image/dp.jpg" alt="proPic" class=" w-14 rounded-full">
+                  </div>
+                  <div>
+                    <p class=" text-xl font-bold">Michael Scott</p>
+                    <p class=" text-gray-700">CEO, WealthNation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=" px-4 max-w-md">
+              <div class=" p-4 space-y-8 border border-gray-900">
+                <div class=" flex flex-nowrap">
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                </div>
+                <p class=" text-gray-900">We have been working with Sense for the past year and have seen a significant improvement in our customer satisfaction levels. Their term of exparts provide valuable insights and guidance that helped us make important changes to our customer service processes. We are extremely satisfied with the results and would highly recommend Sense to any business looking to improve their customer experience.</p>
+                <div class=" flex flex-nowrap gap-4 py-10">
+                  <div class="">
+                    <img src="../image/dp.jpg" alt="proPic" class=" w-14 rounded-full">
+                  </div>
+                  <div>
+                    <p class=" text-xl font-bold">Michael Scott</p>
+                    <p class=" text-gray-700">CEO, WealthNation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=" px-4 max-w-md">
+              <div class=" p-4 space-y-8 border border-gray-900">
+                <div class=" flex flex-nowrap">
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                </div>
+                <p class=" text-gray-900">We have been working with Sense for the past year and have seen a significant improvement in our customer satisfaction levels. Their term of exparts provide valuable insights and guidance that helped us make important changes to our customer service processes. We are extremely satisfied with the results and would highly recommend Sense to any business looking to improve their customer experience.</p>
+                <div class=" flex flex-nowrap gap-4 py-10">
+                  <div class="">
+                    <img src="../image/dp.jpg" alt="proPic" class=" w-14 rounded-full">
+                  </div>
+                  <div>
+                    <p class=" text-xl font-bold">Michael Scott</p>
+                    <p class=" text-gray-700">CEO, WealthNation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=" px-4 max-w-md">
+              <div class=" p-4 space-y-8 border border-gray-900">
+                <div class=" flex flex-nowrap">
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                  <div>
+                    <a href="#"><i class="fa-regular fa-star"></i></a>
+                  </div>
+                </div>
+                <p class=" text-gray-900">We have been working with Sense for the past year and have seen a significant improvement in our customer satisfaction levels. Their term of exparts provide valuable insights and guidance that helped us make important changes to our customer service processes. We are extremely satisfied with the results and would highly recommend Sense to any business looking to improve their customer experience.</p>
+                <div class=" flex flex-nowrap gap-4 py-10">
+                  <div class="">
+                    <img src="../image/dp.jpg" alt="proPic" class=" w-14 rounded-full">
+                  </div>
+                  <div>
+                    <p class=" text-xl font-bold">Michael Scott</p>
+                    <p class=" text-gray-700">CEO, WealthNation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================Testimonials End=========================== -->
+    <!-- service feature section starts -->
+  <div class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="row mx-2 sm:mx-4 md:mx-8">
+        <div class="w-full md:w-6/12 px-4 py-4 relative">
+          <img  class="" src="../image/image2.jpg" alt="2 person">
+          <!-- <div class="w-52 h-60 bg-red-200 absolute -bottom-2 right-0 rounded-md shadow-lg">
+            <h2></h2>
+             <a class="px-4 py-2 bg-green-600" href="">Start Today</a>
+          </div> -->
+        </div>
+        
+        <div class="w-full md:w-6/12">
+          <div class="row mx-2 sm:mx-4 md:mx-8 ">
+            <div class="w-full px-4 py-4 ">
+              <div class="border-b-2 pb-6">
+                <p class="text-blue-400 font-bold  uppercase tracking-widest ">Feature</p>
+                <h2 class=" font-bold text-lg md:text-2xl lg:text-4xl py-2">Provide the best possible service </h2>
+                <p class=" py-2 ">We understand that every business is unique, and we tailor our services to meet the specific needs of your business</p>
+              </div>
+              <div class="row mx-1 py-4">
+                <div class="w-full md:w-1/2  py-4">
+                  <div class="w-20 h-20   bg-color-1"><i class="fa-solid fa-headphones-simple text-4xl px-5 py-5 "></i>
+                  </div>
+                  <p class="text-2xl font-bold  py-2">Customer support</p>
+                  <p class=" ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolores eaque, molestias saepe id dolor.</p>
+                  
+                </div>
+                <div class="w-full md:w-1/2 py-4">
+                  <div class="w-20 h-20   bg-color-2"><i class="fa-solid fa-circle-user text-4xl px-5 py-5 "></i>
+                  </div>
+                  <p class="text-2xl font-bold  py-2">Employee experience</p>
+                  <p class=" ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolores eaque, molestias saepe id dolor.</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- service feature section ends -->
+  <!-- Rated section starts -->
+  <div class="px-4 sm:px-10 md:px-36 py-6 ">
+    <div class="container mx-auto px-4 bg-blue-50">
+      <div class="row  py-6">
+        <div class="w-full md:w-6/12 px-4 md:px-8 ">
+          <h2 class="text-4xl font-bold ">Rated as the  best platfrom</h2>
+          <p class="py-4">our team of experts is  dedicated to helping  businesses improve their customer experience  and take their business to the next level</p>
+        </div>
+        <div class="w-6/12 md:w-3/12 px-4 sm:px-8 py-4 md:py-8">
+          <p class="text-4xl font-bold" >4.9 </p>
+          <div class="py-1">
+            <ul class="flex ">
+              <li><a href=""><i class="fa-regular fa-star "></i></a></i></li>
+              <li><a href=""><i class="fa-regular fa-star"></i></a></i></li>
+              <li><a href=""><i class="fa-regular fa-star"></i></a></i></li>
+              <li><a href=""><i class="fa-regular fa-star"></i></a></i></li>
+              <li><a href=""><i class="fa-regular fa-star"></i></a></i></li>
+            </ul>
+          </div>
+          <p class="">Capterra</p>
+        </div>
+        <div class="w-6/12 md:w-3/12 px-4 sm:px-8 py-4 md:py-8">
+          <p class="text-4xl font-bold" >4.8 </p>
+          <div class="py-1">
+            <ul class="flex">
+              <li><a href=""><i class="fa-regular fa-star "></i></a></i></li>
+              <li><a href=""><i class="fa-regular fa-star"></i></a></i></li>
+              <li><a href=""><i class="fa-regular fa-star"></i></a></i></li>
+              <li><a href=""><i class="fa-regular fa-star"></i></a></i></li>
+              <li><a href=""><i class="fa-regular fa-star"></i></a></i></li>
+            </ul>
+          </div>
+          <p class="">Trustpilot</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Rated section ends -->
+
+  <!--live chat feature section starts -->
+  <div class="py-4">
+    <div class="container mx-auto px-4">
+      <div class="row">
+        <div class="w-full text-center py-4">
+          <p class="text-blue-400 font-bold uppercase tracking-widest">Feature</p>
+          <h2 class="text-4xl  px-4 py-4 font-bold">We can help you achieve your  customer satisfaction goals </h2>
+        </div>
+      </div>
+      <div class="row mx-2 sm:mx-4 md:mx-8  ">
+        <div class=" w-full md:w-1/2 px-4 py-4 ">
+          <div class=" bg-color-1 px-4 py-10">
+            <h2 class="text-2xl font-bold py-4">Live chat technology</h2>
+            <p class="py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, fugit perferendis eos incidunt modi distinctio praesentium eum illum.
+            </p>
+            <div class="py-4">
+              <a href="#" class=" font-medium py-4 ">Learn more <span><i class="fa-solid fa-caret-right  "></i></span></a>
+            </div>
+          </div>
+        </div>
+        <div class=" w-full md:w-1/2 px-4 py-4 ">
+          <div class=" bg-color-2 px-4 py-10">
+            <h2 class="text-2xl font-bold py-4">Human customer support</h2>
+            <p class="py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, fugit perferendis eos incidunt modi distinctio praesentium eum illum.
+            </p>
+            <div class="py-4">
+              <a href="#" class=" font-medium py-4 ">Learn more <span><i class="fa-solid fa-caret-right  "></i></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--live chat feature section ends -->
+  <!-- our number section starts -->
+  <div class="py-4">
+    <div class="container mx-auto px-4">
+      <div class="row">
+        <div class="w-full md:w-1/2 px-4 py-4 md:py-0 ">
+          <h2 class="py-4 text-2xl font-bold ">our numbers speak for itself</h2>
+          <p class="py-4 ">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eos alias cumque esse blanditiis obcaecati natus unde, molestias ex aliquam!
+          </p>
+          <div class="py-4">
+            <a class="px-8 py-2 bg-green-800 text-white capitalize rounded-md font-semibold hover:text-green-800 hover:bg-blue-200" href="">get started</a>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 px-4 py-4 md:py-0 ">
+          <div class="row px-4">
+            <div class="w-full md:w-1/2">
+              <p class="text-5xl font-bold py-2">10k+</p>
+              <p class="text-gray-800">Companies use Sense</p>
+            </div>
+            <div class="w-full md:w-1/2">
+              <p class="text-5xl font-bold py-2">2015</p>
+              <p class="text-gray-800">Year Founded</p>
+            </div>
+          </div>
+          <div class="w-full py-0 md:py-4 ">
+            <p class="text-5xl font-bold py-2">$5M+</p>
+            <p class="text-gray-800">Raised in Series-A Funding</p>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  <!-- our number section ends -->
+  <!-- testimonials section starts -->
+  <div class="">
+    <div class="container mx-auto px-4">
+      <h2 class="text-xl uppercase text-blue-700 font-semibold">Testimonials</h2>
+      <div class="row justify-be py-4">
+        <div class="w-full md:w-1/2 px-4">
+          <h2 class="text-3xl font-bold">What our clients  say about us</h2>
+        </div>
+        <div class="w-full md:w-1/2">
+          <div class="flex">
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- testimonials section ends -->
+  <!-- customer section starts -->
+ <div class="py-6 bg-green-800  ">
+  <div class="container mx-auto px-4  ">
+    <div class="row ">
+      <div class="w-full px-10 py-20 text-center">
+        <h2 class="text-5xl text-white font-semibold">
+          Take your customers  to the next level
+        </h2>
+        <p class="text-white py-5">We are dedicated to helping businesses to improve  the experience they provide for the customers</p>
+        <div class="py-4">
+          <a class="px-8 py-2 bg-white text-green-800 capitalize rounded-md font-semibold hover:bg-blue-200 " href="">get started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+  <!-- customer section ends -->
+
+  <!-- footer section starts -->
+  <div class="py-4">
+    <div class="container mx-auto px-4">
+      <div class="row border-b-2">
+        <div class="w-full md:w-6/12  ">
+          <div class="md:px-4 px-2">
+            <img class="w-20 h-8" src="../image/Logo1.png" alt="logo">
+          </div>
+          <p class="md:px-4 px-2 py-2">
+            We are dedicated to helping  businesses improve the experience  they provide for their customers.
+          </p>
+        </div>
+        
+        <div class="w-full md:w-2/12 capitalize px-2 py-4">
+          <h2 class="text-xl font-bold">pages</h2>
+          <ul class="py-2 space-y-2">
+            <li><a href="home.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="pricing.html">pricing</a></li>
+            <li><a href="features.html">features</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="career.html">career</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+        <div class="w-full md:w-2/12 capitalize px-2 py-4">
+          <h2 class="text-xl font-bold ">template</h2>
+          <ul class="py-2 space-y-2 ">
+            <li><a href="styleguide.html">styleguide</a> </li>
+            <li><a href="licenses.html">licenses</a> </li>
+            <li><a href="changelog.html">changelog</a> </li>
+            <li><a href="instructions.html">instructions</a> </li>
+            
+          </ul>
+        </div>
+        <div class="w-full md:w-2/12 capitalize px-2 py-4">
+          <h2 class="text-xl font-bold ">account</h2>
+          <ul class="py-2 space-y-2">
+            <li><a href="sign up.html">sign up</a> </li>
+            <li><a href="login.html ">login </a>  </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer section ends -->
+
+
+    <script src="../js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script>
+      var slider = tns({
+        container: '.my-slider',
+        items: 3,
+        slideBy: 'page',
+        autoplay: true,
+        autoplayButtonOutput: true,
+        controls: true,
+        prevButton: true,
+        nextButton: true,
+        nav: false,
+        mouseDrag: true,
+      });
+  </script>
+    
+</body>
+</html>

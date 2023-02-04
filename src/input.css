@@ -82,6 +82,10 @@
   background-color: #01001A;
  }
 
+ .bg-gradient{
+  background: -webkit-linear-gradient(45deg,#02AAB0, #00CDAC 100%);
+ }
+
  .btn-col-1{
   background-color: #0D4841;
  }

@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../src/slick.css">
     <link rel="stylesheet" type="text/css" href="../src/slick-theme.css">
 </head>
-<body class=" bg-gray-700">
+<body>
     <header>
       <!-- ===================head-1==================== -->
       <section class="place bg-color-1">
@@ -243,8 +243,8 @@
             </div>
             <div class="">
               <ul class=" flex justify-end gap-4">
-                <li class="slick-prev px-2 py-2 ease-in duration-300 arrow cursor-pointer"><i class="fa fa-2xl fa-arrow-left"></i></li>
-                <li class="slick-next px-2 py-2 ease-in duration-300 arrow cursor-pointer"><i class="fa fa-2xl fa-arrow-right"></i></li>
+                <li class="arr1 px-2 py-2 ease-in duration-300 arrow cursor-pointer"><i class="fa fa-2xl fa-arrow-left"></i></li>
+                <li class="arr2 px-2 py-2 ease-in duration-300 arrow cursor-pointer"><i class="fa fa-2xl fa-arrow-right"></i></li>
               </ul>
             </div>
           </div>
@@ -714,6 +714,8 @@
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 3,
+            prevArrow: $('.arr1'),
+            nextArrow: $('.arr2'),
             responsive: [
                   {
                     breakpoint: 768,

@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logic Line</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./tailwind.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="../src/slick.css">
     <link rel="stylesheet" type="text/css" href="../src/slick-theme.css">
 </head>
 <body>
-    <header>
+    <header class=" sticky top-0 z-50">
       <!-- ===================head-1==================== -->
       <section class="place bg-color-1">
-        <div class=" relative container mx-auto px-4 py-2">
+        <div class=" relative container max-w-screen-xl mx-auto px-4 py-2">
           <div class="row">
             <div class="w-full px-16 flex flex-wrap items-center justify-center gap-3 sm:gap-0">
               <h3 class=" px-4 font-bold text-xl">We are hiring!</h3>
@@ -26,38 +26,44 @@
       </section>
       <!-- ===================head-1 End==================== -->
       <!-- ================Navbar====================== -->
-      <nav class=" bg-color-2">
-        <div class=" relative container mx-auto px-4 py-4">
-          <div class="row items-center">
-            <div class="w-4/12 px-4 flex items-center justify-start">
-              <a href="#"><img src="../image/Logo.png" alt="Logo" class=""></a>
+      <nav class=" bg-color-2 shadow-lg">
+        <div class=" relative container max-w-screen-xl mx-auto px-4 py-4">
+          <div class="row items-center justify-between">
+            <div class="w-1/3 px-4">
+              <a href="./index.html"><img src="../image/Logo.png" alt="Logo" class=""></a>
             </div>
-            <div class="w-4/12 px-4">
-              <ul class=" nav-bar hidden md:flex flex-wrap items-center justify-between">
-                <li class=" py-3"><a href="#" class=" relative text-black hover:text-logic-pest">About</a></li>
-                <li class=" py-3"><a href="#" class=" relative text-black hover:text-logic-pest">Pricing</a></li>
-                <li class=" py-3"><a href="#" class=" relative text-black hover:text-logic-pest">Features</a></li>
-                <li class=" py-3"><a href="#" class=" relative text-black hover:text-logic-pest">Blog</a></li>
-              </ul>
-            </div>
-            <div class="w-4/12 px-4">
-              <ul class=" hidden md:flex flex-wrap items-center justify-end gap-4">
-                <li><a href="#" class=" px-4 py-3 text-black hover:text-logic-pest">Login</a></li>
-                <li><a href="#" class=" px-6 py-3 btn-col-1  transition ease-in-out duration-300 rounded-md text-white">Get Started</a></li>
-              </ul>
+            <div class=" w-2/3 flex flex-wrap px-4 items-center">
+              <div class="w-7/12">
+                <ul class=" nav-bar hidden lg:flex flex-wrap items-center justify-between">
+                  <li class=" py-3"><a href="./index.html" class=" relative text-logic-pest">Home</a></li>
+                  <li class=" py-3"><a href="#" class=" relative text-black hover:text-logic-pest">About us</a></li>
+                  <li class=" py-3"><a href="#" class=" relative text-black hover:text-logic-pest">Pricing</a></li>
+                  <li class=" py-3"><a href="./contacts.html" class=" relative text-black hover:text-logic-pest">Contact us</a></li>
+                  <li class=" py-3"><a href="#" class=" relative text-black hover:text-logic-pest">Career</a></li>
+                  <li class=" py-3"><a href="#" class=" relative text-black hover:text-logic-pest">Blog</a></li>
+                </ul>
+              </div>
+              <div class="w-5/12">
+                <ul class=" hidden lg:flex flex-wrap items-center justify-end gap-4">
+                  <li><a href="#" class=" px-4 py-3 text-black hover:text-logic-pest">Login</a></li>
+                  <li><a href="#" class=" px-6 py-3 btn-col-1  transition ease-in-out duration-300 rounded-md text-white">Get Started</a></li>
+                </ul>
+              </div>
             </div>
             <!-- =================Mobile Menu Button=================== -->
-            <span class="mobile-menu-btn cursor-pointer absolute block md:hidden top-1/3 right-4">
+            <span class="mobile-menu-btn cursor-pointer absolute block lg:hidden top-1/3 right-4">
               <i class="fas fa-bars fa-2xl text-color-1"></i>
             </span>
             <!-- =================Mobile Menu Button End=================== -->
           </div>
           <!-- ========================Mobile Menu=============================== -->
-          <div class="mobile-menu hidden md:hidden relative">
+          <div class="mobile-menu hidden lg:hidden relative">
             <ul class=" z-30 absolute top-2 w-full divide-y divide-bg-color-2 list rounded-sm shadow-xl">
-              <li class=""><a href="#" class=" relative flex p-4">About</a></li>
+              <li class=""><a href="./index.html" class=" relative flex p-4">Home</a></li>
+              <li class=""><a href="#" class=" relative flex p-4">About us</a></li>
               <li class=""><a href="#" class=" relative flex p-4">Pricing</a></li>
-              <li class=""><a href="#" class=" relative flex p-4">Features</a></li>
+              <li class=""><a href="./contacts.html" class=" relative flex p-4">Contact us</a></li>
+              <li class=""><a href="#" class=" relative flex p-4">Career</a></li>
               <li class=""><a href="#" class=" relative flex p-4">Blog</a></li>
             </ul>
           </div>
@@ -65,29 +71,29 @@
         </div>
       </nav>
       <!-- ================Navbar End====================== -->
-      <!-- =====================Hero Section================== -->
-      <section class=" bg-color-2">
-        <div class="container mx-auto px-4 py-10">
-          <div class="row items-center">
-            <div class=" w-full md:w-6/12 px-4 space-y-4 md:space-y-6">
-              <p class=" text-gradient font-bold text-base sm:text-lg md:text-xl tracking-widest">CUSTOMER SERVICE</p>
-              <h2 class=" font-bold text-lg md:text-2xl lg:text-4xl">Take your customer</br> experience to the next level</h2>
-              <p class=" text-base text-gray-700 pb-8 lg:pb-0 pr-8 md:pr-0">We are dedicated to helping businesses improve the experience they provide for their customers.</p>
-            </div>
-            <div class=" w-full md:w-6/12 px-4">
-                <div class="flex justify-center md:justify-end items-center">
-                    <img src="../image/hero.jpg" alt="hero">
-                </div>
-            </div>
+    </header>
+    <!-- =====================Hero Section================== -->
+    <section class=" bg-color-2">
+      <div class="container max-w-screen-xl mx-auto px-4 py-4">
+        <div class="row items-center">
+          <div class=" w-full md:w-6/12 px-4 space-y-4 md:space-y-6">
+            <p class=" text-gradient font-bold text-base sm:text-lg md:text-xl tracking-widest">CUSTOMER SERVICE</p>
+            <h2 class=" font-bold text-lg md:text-2xl lg:text-4xl">Take your customer</br> experience to the next level</h2>
+            <p class=" text-base text-gray-700 pb-8 lg:pb-0 pr-8 md:pr-0">We are dedicated to helping businesses improve the experience they provide for their customers.</p>
+          </div>
+          <div class=" w-full md:w-6/12 px-4">
+              <div class="flex justify-center items-center">
+                  <img src="../image/hero01.png" alt="hero">
+              </div>
           </div>
         </div>
-      </section>
-      <!-- =====================Hero Section End================== -->
-    </header>
+      </div>
+    </section>
+    <!-- =====================Hero Section End================== -->
 
     <!-- =====================Trusted Start====================== -->
     <section class=" py-10">
-      <div class="container mx-auto px-4">
+      <div class="container max-w-screen-xl mx-auto px-4">
         <div class="row justify-center space-y-8">
           <div class="w-full">
             <h3 class=" text-center text-gradient font-bold text-base sm:text-lg md:text-xl tracking-widest">TRUSTED BY</h3>
@@ -114,7 +120,7 @@
 
     <!-- =========================Dedicated Start=========================== -->
     <section class=" py-10">
-      <div class="container mx-auto px-4">
+      <div class="container max-w-screen-xl mx-auto px-4">
         <div class="row items-center">
           <div class="w-full md:w-6/12 px-4">
             <div class="flex justify-center md:justify-start items-center">
@@ -145,7 +151,7 @@
     <!-- =========================Dedicated End=========================== -->
     <!-- =========================Tailored Start=========================== -->
     <section class=" py-10">
-      <div class="container mx-auto px-4">
+      <div class="container max-w-screen-xl mx-auto px-4">
         <div class="row items-center">
           <div class=" order-2 md:order-1 w-full md:w-6/12 px-4 space-y-4 md:space-y-6 pt-6 md:pt-0">
             <p class=" text-gradient font-bold text-base sm:text-lg md:text-xl tracking-widest">FEATURE</p>
@@ -180,7 +186,7 @@
     <!-- =========================Tailored End=========================== -->
     <!-- =========================CRM Start=========================== -->
     <section class=" py-10 bg-color-5">
-        <div class="container mx-auto px-4">
+        <div class="container max-w-screen-xl mx-auto px-4">
             <div class="row">
                 <div class="w-full px-4 text-center space-y-4 lg:px-96">
                     <p class=" text-gradient font-bold text-base sm:text-lg md:text-xl tracking-widest">FEATURES</p>
@@ -188,7 +194,7 @@
                     <p class=" text-base sm:text-lg text-white pb-16">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </div>
                 <div class=" w-full md:w-4/12 px-4 pb-4 md:pb-0">
-                    <div class=" space-y-4 bg-color-3 p-8">
+                    <div class=" space-y-4 bg-color-3 p-8 h-full">
                         <div class=" w-12 h-12 pt-3 rounded-sm bg-color-2">
                             <i class=" p-2 fa-solid fa-2xl fa-headset"></i>
                         </div>
@@ -199,7 +205,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" w-full md:w-4/12 px-4 pb-4 md:pb-0">
+                <div class=" w-full md:w-4/12 px-4 pb-4 md:pb-0 h-full">
                     <div class=" space-y-4 bg-color-3 p-8">
                         <div class=" w-12 h-12 pt-3 rounded-sm bg-color-2">
                             <i class=" p-2 fa-solid fa-2xl fa-headset"></i>
@@ -212,7 +218,7 @@
                     </div>
                 </div>
                 <div class=" w-full md:w-4/12 px-4">
-                    <div class=" space-y-4 bg-color-3 p-8">
+                    <div class=" space-y-4 bg-color-3 p-8 h-full">
                         <div class=" w-12 h-12 pt-3 rounded-sm bg-color-2">
                             <i class=" p-2 fa-solid fa-2xl fa-headset"></i>
                         </div>
@@ -235,7 +241,7 @@
     
     <!-- service feature section starts -->
     <div class="py-10 sm:py-20 overflow-hidden">
-      <div class="container mx-auto px-4">
+      <div class="container max-w-screen-xl mx-auto px-4">
         <div class="row">
           <div class="w-full md:w-6/12 px-4 py-4">
             <img  class="" src="../image/image2.jpg" alt="2 person">
@@ -276,7 +282,7 @@
     <!-- service feature section ends -->
     <!-- Rated section starts -->
     <div class="px-4 sm:px-10 md:px-36 py-10 sm:py-6 ">
-      <div class="container mx-auto px-4 bg-blue-50">
+      <div class="container max-w-screen-xl mx-auto px-4 bg-blue-50">
         <div class="row  py-6">
           <div class="w-full md:w-6/12 px-4 md:px-8 ">
             <h2 class="text-xl sm:text-2xl md:text-4xl font-bold ">Rated as the  best platfrom</h2>
@@ -315,14 +321,14 @@
 
     <!--live chat feature section starts -->
     <div class="py-6">
-      <div class="container mx-auto px-4">
+      <div class="container max-w-screen-xl mx-auto px-4">
         <div class="row">
           <div class="w-full text-center py-4">
             <p class="text-gradient  font-bold uppercase tracking-widest">Feature</p>
             <h2 class="text-xl sm:text-2xl md:text-4xl  px-4 py-4 font-bold">We can help you achieve your  customer satisfaction goals </h2>
           </div>
         </div>
-        <div class="row   ">
+        <div class="row">
           <div class=" w-full md:w-1/2 px-4 py-4 ">
             <div class=" bg-color-1 px-4 py-10">
               <h2 class="text-xl sm:text-2xl font-bold py-4">Live chat technology</h2>
@@ -349,7 +355,7 @@
     <!--live chat feature section ends -->
     <!-- our number section starts -->
     <div class="py-4">
-      <div class="container mx-auto px-4">
+      <div class="container max-w-screen-xl mx-auto px-4">
         <div class="row">
           <div class="w-full md:w-1/2 px-4 py-4 md:py-0 ">
             <h2 class="py-2 sm:py-4 text-xl sm:text-2xl font-bold  ">Our numbers speak for itself</h2>
@@ -383,248 +389,176 @@
     <!-- our number section ends -->
     <!-- =========================Testimonials Start=========================== -->
     <section class=" py-10 overflow-hidden">
-      <div class="container mx-auto px-4">
+      <div class="container max-w-screen-xl mx-auto px-4">
         <div class="row items-center">
-          <div class="w-full px-4 flex justify-between items-center pb-10">
-            <div class=" space-y-4 md:space-y-6">
-              <p class=" text-gradient font-bold text-sm sm:text-lg md:text-xl tracking-widest">TESTIMONIALS</p>
-              <h2 class=" font-bold text-lg sm:text-2xl lg:text-4xl">What our clients</br> say about us</h2>
+          <div class="w-full px-4 flex flex-wrap justify-between items-center pb-10">
+            <div class=" w-full md:w-1/2 space-y-4 md:space-y-6">
+              <h2 class=" font-bold text-lg sm:text-2xl lg:text-4xl">We Are <span class=" text-gradient">Expert</span></h2>
+              <p class=" text-lg text-gray-900">We work intensively in search of ideals that can add up in the lives of our clients. These are the technologies that move us and we are grateful for the recognition.</p>
             </div>
-            <div class="">
-              <ul class=" flex justify-end gap-4">
+            <div class=" w-full md:w-1/2 pt-4 md:pt-0">
+              <ul class=" flex justify-center md:justify-end gap-4">
                 <li class="arr1 px-2 py-2 ease-in duration-300 arrow cursor-pointer"><i class="fa fa-2xl fa-arrow-left"></i></li>
                 <li class="arr2 px-2 py-2 ease-in duration-300 arrow cursor-pointer"><i class="fa fa-2xl fa-arrow-right"></i></li>
               </ul>
             </div>
           </div>
           <div class="homeslider w-full">
-            <div class=" px-4 max-w-md">
-              <div class=" p-4 space-y-8 border border-gray-900">
-                <div class=" flex flex-nowrap">
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
+            <div class=" px-4 h-full">
+              <a href="#" class="flex flex-col items-center p-10 border border-gray-400 rounded cursor-pointer hover:bg-gray-200 bg-gray-50 h-60">
+                <div class="flex flex-col justify-between w-full h-full">
+                    <div class="h-3/5 flex items-center justify-center">
+                        <img class=" w-28" src="../image/android.png" alt="">
+                    </div>
+                    <div class="h-2/5 flex items-center pt-8 justify-center">
+                        <span class="text-3xl font-semibold group-hover:text-white">Android</span>
+                    </div>
                 </div>
-                <p class=" text-gray-900">We have been working with Sense for the past year and have seen a significant improvement in our customer satisfaction levels. Their term of exparts provide valuable insights and guidance that helped us make important changes to our customer service processes. We are extremely satisfied with the results and would highly recommend Sense to any business looking to improve their customer experience.</p>
-                <div class=" flex flex-nowrap gap-4 py-10">
-                  <div class="">
-                    <img src="../image/dp.jpg" alt="proPic" class=" w-14 rounded-full">
-                  </div>
-                  <div>
-                    <p class=" text-xl font-bold">Michael Scott</p>
-                    <p class=" text-gray-700">CEO, WealthNation</p>
-                  </div>
-                </div>
-              </div>
+                </a>
             </div>
-            <div class=" px-4 max-w-md">
-              <div class=" p-4 space-y-8 border border-gray-900">
-                <div class=" flex flex-nowrap">
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
+            <div class=" px-4 h-full">
+              <a href="#" class="flex flex-col items-center p-10 border border-gray-400 rounded cursor-pointer hover:bg-gray-200 bg-gray-50 h-60">
+                <div class="flex flex-col justify-between w-full h-full">
+                    <div class="h-3/5 flex items-center justify-center">
+                        <img class=" w-28" src="../image/go.png" alt="">
+                    </div>
+                    <div class="h-2/5 flex items-center pt-8 justify-center">
+                        <span class="text-3xl font-semibold group-hover:text-white">Go Lang</span>
+                    </div>
                 </div>
-                <p class=" text-gray-900">We have been working with Sense for the past year and have seen a significant improvement in our customer satisfaction levels. Their term of exparts provide valuable insights and guidance that helped us make important changes to our customer service processes. We are extremely satisfied with the results and would highly recommend Sense to any business looking to improve their customer experience.</p>
-                <div class=" flex flex-nowrap gap-4 py-10">
-                  <div class="">
-                    <img src="../image/dp.jpg" alt="proPic" class=" w-14 rounded-full">
-                  </div>
-                  <div>
-                    <p class=" text-xl font-bold">Michael Scott</p>
-                    <p class=" text-gray-700">CEO, WealthNation</p>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
-            <div class=" px-4 max-w-md">
-              <div class=" p-4 space-y-8 border border-gray-900">
-                <div class=" flex flex-nowrap">
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
+            <div class=" px-4 h-full">
+              <a href="#" class="flex flex-col items-center p-10 border border-gray-400 rounded cursor-pointer hover:bg-gray-200 bg-gray-50 h-60">
+                <div class="flex flex-col justify-between w-full h-full">
+                    <div class="h-3/5 flex items-center justify-center">
+                        <img class=" w-28" src="../image/flutter.png" alt="">
+                    </div>
+                    <div class="h-2/5 flex items-center pt-8 justify-center">
+                        <span class="text-3xl font-semibold group-hover:text-white">Flutter</span>
+                    </div>
                 </div>
-                <p class=" text-gray-900">We have been working with Sense for the past year and have seen a significant improvement in our customer satisfaction levels. Their term of exparts provide valuable insights and guidance that helped us make important changes to our customer service processes. We are extremely satisfied with the results and would highly recommend Sense to any business looking to improve their customer experience.</p>
-                <div class=" flex flex-nowrap gap-4 py-10">
-                  <div class="">
-                    <img src="../image/dp.jpg" alt="proPic" class=" w-14 rounded-full">
-                  </div>
-                  <div>
-                    <p class=" text-xl font-bold">Michael Scott</p>
-                    <p class=" text-gray-700">CEO, WealthNation</p>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
-            <div class=" px-4 max-w-md">
-              <div class=" p-4 space-y-8 border border-gray-900">
-                <div class=" flex flex-nowrap">
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
+            <div class=" px-4 h-full">
+              <a href="#" class="flex flex-col items-center p-10 border border-gray-400 rounded cursor-pointer hover:bg-gray-200 bg-gray-50 h-60">
+                <div class="flex flex-col justify-between w-full h-full">
+                    <div class="h-3/5 flex items-center justify-center">
+                        <img class=" w-28" src="../image/laravel.png" alt="">
+                    </div>
+                    <div class="h-2/5 flex items-center pt-8 justify-center">
+                        <span class="text-3xl font-semibold group-hover:text-white">Laravel</span>
+                    </div>
                 </div>
-                <p class=" text-gray-900">We have been working with Sense for the past year and have seen a significant improvement in our customer satisfaction levels. Their term of exparts provide valuable insights and guidance that helped us make important changes to our customer service processes. We are extremely satisfied with the results and would highly recommend Sense to any business looking to improve their customer experience.</p>
-                <div class=" flex flex-nowrap gap-4 py-10">
-                  <div class="">
-                    <img src="../image/dp.jpg" alt="proPic" class=" w-14 rounded-full">
-                  </div>
-                  <div>
-                    <p class=" text-xl font-bold">Michael Scott</p>
-                    <p class=" text-gray-700">CEO, WealthNation</p>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
-            <div class=" px-4 max-w-md">
-              <div class=" p-4 space-y-8 border border-gray-900">
-                <div class=" flex flex-nowrap">
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
+            <div class=" px-4 h-full">
+              <a href="#" class="flex flex-col items-center p-10 border border-gray-400 rounded cursor-pointer hover:bg-gray-200 bg-gray-50 h-60">
+                <div class="flex flex-col justify-between w-full h-full">
+                    <div class="h-3/5 flex items-center justify-center">
+                        <img class=" w-28" src="../image/java.png" alt="">
+                    </div>
+                    <div class="h-2/5 flex items-center pt-8 justify-center">
+                        <span class="text-3xl font-semibold group-hover:text-white">Java</span>
+                    </div>
                 </div>
-                <p class=" text-gray-900">We have been working with Sense for the past year and have seen a significant improvement in our customer satisfaction levels. Their term of exparts provide valuable insights and guidance that helped us make important changes to our customer service processes. We are extremely satisfied with the results and would highly recommend Sense to any business looking to improve their customer experience.</p>
-                <div class=" flex flex-nowrap gap-4 py-10">
-                  <div class="">
-                    <img src="../image/dp.jpg" alt="proPic" class=" w-14 rounded-full">
-                  </div>
-                  <div>
-                    <p class=" text-xl font-bold">Michael Scott</p>
-                    <p class=" text-gray-700">CEO, WealthNation</p>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
-            <div class=" px-4 max-w-md">
-              <div class=" p-4 space-y-8 border border-gray-900">
-                <div class=" flex flex-nowrap">
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
+            <div class=" px-4 h-full">
+              <a href="#" class="flex flex-col items-center p-10 border border-gray-400 rounded cursor-pointer hover:bg-gray-200 bg-gray-50 h-60">
+                <div class="flex flex-col justify-between w-full h-full">
+                    <div class="h-3/5 flex items-center justify-center">
+                        <img class=" w-28" src="../image/kotlin.png" alt="">
+                    </div>
+                    <div class="h-2/5 flex items-center pt-8 justify-center">
+                        <span class="text-3xl font-semibold group-hover:text-white">Kotlin</span>
+                    </div>
                 </div>
-                <p class=" text-gray-900">We have been working with Sense for the past year and have seen a significant improvement in our customer satisfaction levels. Their term of exparts provide valuable insights and guidance that helped us make important changes to our customer service processes. We are extremely satisfied with the results and would highly recommend Sense to any business looking to improve their customer experience.</p>
-                <div class=" flex flex-nowrap gap-4 py-10">
-                  <div class="">
-                    <img src="../image/dp.jpg" alt="proPic" class=" w-14 rounded-full">
-                  </div>
-                  <div>
-                    <p class=" text-xl font-bold">Michael Scott</p>
-                    <p class=" text-gray-700">CEO, WealthNation</p>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
-            <div class=" px-4 max-w-md">
-              <div class=" p-4 space-y-8 border border-gray-900">
-                <div class=" flex flex-nowrap">
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
-                  <div>
-                    <a href="#"><i class="fa-regular fa-star"></i></a>
-                  </div>
+            <div class=" px-4 h-full">
+              <a href="#" class="flex flex-col items-center p-10 border border-gray-400 rounded cursor-pointer hover:bg-gray-200 bg-gray-50 h-60">
+                <div class="flex flex-col justify-between w-full h-full">
+                    <div class="h-3/5 flex items-center justify-center">
+                        <img class=" w-28" src="../image/postgresql.png" alt="">
+                    </div>
+                    <div class="h-2/5 flex items-center pt-8 justify-center">
+                        <span class="text-3xl font-semibold group-hover:text-white">PostgreSql</span>
+                    </div>
                 </div>
-                <p class=" text-gray-900">We have been working with Sense for the past year and have seen a significant improvement in our customer satisfaction levels. Their term of exparts provide valuable insights and guidance that helped us make important changes to our customer service processes. We are extremely satisfied with the results and would highly recommend Sense to any business looking to improve their customer experience.</p>
-                <div class=" flex flex-nowrap gap-4 py-10">
-                  <div class="">
-                    <img src="../image/dp.jpg" alt="proPic" class=" w-14 rounded-full">
-                  </div>
-                  <div>
-                    <p class=" text-xl font-bold">Michael Scott</p>
-                    <p class=" text-gray-700">CEO, WealthNation</p>
-                  </div>
+              </a>
+            </div>
+            <div class=" px-4 h-full">
+              <a href="#" class="flex flex-col items-center p-10 border border-gray-400 rounded cursor-pointer hover:bg-gray-200 bg-gray-50 h-60">
+                <div class="flex flex-col justify-between w-full h-full">
+                    <div class="h-3/5 flex items-center justify-center">
+                        <img class=" w-28" src="../image/mysql.png" alt="">
+                    </div>
+                    <div class="h-2/5 flex items-center pt-8 justify-center">
+                        <span class="text-3xl font-semibold group-hover:text-white">MySQL</span>
+                    </div>
                 </div>
-              </div>
+              </a>
+            </div>
+            <div class=" px-4 h-full">
+              <a href="#" class="flex flex-col items-center p-10 border border-gray-400 rounded cursor-pointer hover:bg-gray-200 bg-gray-50 h-60">
+                <div class="flex flex-col justify-between w-full h-full">
+                    <div class="h-3/5 flex items-center justify-center">
+                        <img class=" w-28" src="../image/md.png" alt="">
+                    </div>
+                    <div class="h-2/5 flex items-center pt-8 justify-center">
+                        <span class="text-3xl font-semibold group-hover:text-white">MongoDB</span>
+                    </div>
+                </div>
+              </a>
+            </div>
+            <div class=" px-4 h-full">
+              <a href="#" class="flex flex-col items-center p-10 border border-gray-400 rounded cursor-pointer hover:bg-gray-200 bg-gray-50 h-60">
+                <div class="flex flex-col justify-between w-full h-full">
+                    <div class="h-3/5 flex items-center justify-center">
+                        <img class=" w-28" src="../image/AWS.png" alt="">
+                    </div>
+                    <div class="h-2/5 flex items-center pt-8 justify-center">
+                        <span class="text-3xl font-semibold group-hover:text-white">AWS</span>
+                    </div>
+                </div>
+              </a>
+            </div>
+            <div class=" px-4 h-full">
+              <a href="#" class="flex flex-col items-center p-10 border border-gray-400 rounded cursor-pointer hover:bg-gray-200 bg-gray-50 h-60">
+                <div class="flex flex-col justify-between w-full h-full">
+                    <div class="h-3/5 flex items-center justify-center">
+                        <img class=" w-28" src="../image/vuejs.png" alt="">
+                    </div>
+                    <div class="h-2/5 flex items-center pt-8 justify-center">
+                        <span class="text-3xl font-semibold group-hover:text-white">Vue JS</span>
+                    </div>
+                </div>
+              </a>
+            </div>
+            <div class=" px-4 h-full">
+              <a href="#" class="flex flex-col items-center p-10 border border-gray-400 rounded cursor-pointer hover:bg-gray-200 bg-gray-50 h-60">
+                <div class="flex flex-col justify-between w-full h-full">
+                    <div class="h-3/5 flex items-center justify-center">
+                        <img class=" w-28" src="../image/tailwind.png" alt="">
+                    </div>
+                    <div class="h-2/5 flex items-center pt-8 justify-center">
+                        <span class="text-3xl font-semibold group-hover:text-white">Tailwind CSS</span>
+                    </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- =========================Testimonials End=========================== -->
+
     <!-- customer section starts -->
-    <div class="py-6">
-      <div class="container mx-auto px-4">
-        <div class=" relative row">
-          <div class="w-full px-4 space-y-4 md:space-y-6 py-24 text-center bg-color-3 rounded-md mx-4">
+    <div class="pt-6 pb-16">
+      <div class="container max-w-screen-xl mx-auto px-4">
+        <div class="  row">
+          <div class=" relative w-full px-4 space-y-4 md:space-y-6 py-12 text-center bg-color-3 rounded-md mx-4">
             <h2 class="text-lg md:text-2xl lg:text-4xl text-white font-bold">
               Take your customers</br>  to the next level
             </h2>
@@ -632,9 +566,8 @@
             <div class="py-4 bg-color-3">
               <a class="px-8 py-2 bg-white text-color-1 capitalize rounded-md font-semibold hover:text-white hover:bg-logic-pest " href="">get started</a>
             </div>
-          </div>
-          <div class=" -z-10 absolute h-full w-[95%] md:w-[96%] lg:w-[97.5%] bg-gradient transform translate-x-4 translate-y-4 ml-4 mr-4 rounded-md">
-
+            <div class=" -z-10 absolute h-full w-full bg-gradient -bottom-4 left-4 rounded-md">
+            </div>
           </div>
         </div>
       </div>
@@ -642,72 +575,87 @@
     <!-- customer section ends -->
 
     <!-- footer section starts -->
-    <div class=" py-10">
-      <div class="container mx-auto px-4 py-4">
-        <div class="row">
-          <div class="w-full md:w-6/12  ">
-            <div class="md:px-4 px-2">
-              <img class="w-20 h-8" src="../image/Logo.png" alt="logo">
-            </div>
-            <p class="md:px-4 px-2 py-2">
-              We are dedicated to helping  businesses improve the experience  they provide for their customers.
-            </p>
-          </div>
+    <div class=" py-10  bg-color-2">
+      <div class="container  max-w-screen-xl mx-auto px-4 py-4">
+          <div class="row">
+              <div class="w-full sm:w-6/12 md:w-3/12  ">
+                  <div class="md:px-4 px-2">
+                      <img class="w-28 h-14" src="../image/Logo.png" alt="logo">
+                  </div>
+                  <p class="md:px-4 px-2 py-2">Logic Line is a software firm in Khulna.
+                  </p>
+                  <p class="md:px-4 px-2 py-2">
+                      <span class="text font-normal text-base ">
+                          <i class="fa-solid fa-phone"></i> 01955786556
+                      </span>
+                  </p>
+                  <p class="md:px-4 px-2 py-2">
+                  <span class="text font-normal  text-base ">
+                      <i class="fa-solid fa-envelope"></i> contact@logicline.tech
+                  </span>
+                  </p>
+                  <p class="md:px-4 px-2 py-2">
+                  <span class="text font-normal  text-base">
+                      <i class="fa-solid fa-location-dot"></i>  6th Floor, South Zone Hospital,33 Outer Bypass Rd, Khulna-9100
+                  </span>
+                  </p>
+                  <div class="px-4">
+                      <div class="mt-8  cursor-pointer border rounded text-center p-4 hover:bg-gradient bg-color-4  text-white">
+                          <a href="/contact-us" class=" ">GET IN TOUCH</a>
+                      </div>
+                  </div>
+              </div>
           
-          <div class="w-full md:w-2/12 capitalize px-2 py-4 md:py-0">
-            <h2 class="text-xl px-2 font-bold">pages</h2>
-            <ul class="px-2 py-2 space-y-2">
-              <li><a class="hover:text-gradient" href="home.html">home</a></li>
-              <li><a class="hover:text-gradient" href="about.html">about</a></li>
-              <li><a class="hover:text-gradient" href="pricing.html">pricing</a></li>
-              <li><a class="hover:text-gradient" href="features.html">features</a></li>
-              <li><a class="hover:text-gradient" href="blog.html">blog</a></li>
-              <li><a class="hover:text-gradient" href="career.html">career</a></li>
-              <li><a class="hover:text-gradient" href="contact.html">contact</a></li>
-            </ul>
-          </div>
-          <div class="w-full md:w-2/12 capitalize px-2 py-4 md:py-0">
-            <h2 class="text-xl px-2 font-bold ">template</h2>
-            <ul class="px-2 py-2 space-y-2 ">
-              <li><a class="hover:text-gradient" href="styleguide.html">styleguide</a> </li>
-              <li><a class="hover:text-gradient" href="licenses.html">licenses</a> </li>
-              <li><a class="hover:text-gradient" href="changelog.html">changelog</a> </li>
-              <li><a class="hover:text-gradient" href="instructions.html">instructions</a> </li>
+              <div class="w-full sm:w-6/12 md:w-3/12 sm:pl-10 lg:pl-20 capitalize  py-4  md:py-0">
+                  <h2 class="px-2 text-3xl mb-4 font-semibold">Menu</h2> <!--text-white -->
+                  <ul class="px-2 py-2 space-y-2 ">
+                      <li><a class="hover:text-gradient " href="home.html">home</a></li>
+                      <li><a class="hover:text-gradient" href="about.html">about</a></li>
+                      <li><a class="hover:text-gradient" href="pricing.html">pricing</a></li>
+                      <li><a class="hover:text-gradient" href="features.html">features</a></li>
+                      <li><a class="hover:text-gradient" href="blog.html">blog</a></li>
+                      <li><a class="hover:text-gradient" href="career.html">career</a></li>
+                      <li><a class="hover:text-gradient" href="contact.html">contact</a></li>
+                  </ul>
+              </div>
+          <div class="w-full sm:w-6/12 md:w-3/12 capitalize  py-4 md:py-0">
+              <h2 class="px-2 text-3xl mb-4   font-semibold">Services</h2>
+              <ul class="px-2 py-2 space-y-2  ">
+              <li><a class="hover:text-gradient" href="styleguide.html">Mobile apps</a> </li>
+              <li><a class="hover:text-gradient" href="licenses.html">Web Development</a> </li>
+              <li><a class="hover:text-gradient" href="changelog.html">Server </a> </li>
+              <li><a class="hover:text-gradient" href="instructions.html">Ui/Ux </a> </li>
               
-            </ul>
+              </ul>
           </div>
-          <div class="w-full md:w-2/12 capitalize px-2 py-4 md:py-0">
-            <h2 class="text-xl px-2 font-bold ">account</h2>
-            <ul class="px-2 py-2 space-y-2">
-              <li><a class="hover:text-gradient" href="sign up.html">sign up</a> </li>
-              <li><a class="hover:text-gradient" href="login.html ">login </a>  </li>
-            </ul>
+          <div class="w-full sm:w-6/12 md:w-3/12 sm:pl-10 md:pl-0  capitalize  py-4 md:py-0">
+              <h2 class="px-2 text-3xl mb-4 font-semibold">Social</h2>
+              <div class="flex px-2 py-2 space-x-6  sm:space-x-3 md:space-x-4">
+              <a href="" class="hover:text-gradient text-3xl " ><i class="fa-brands fa-square-facebook"></i></a>
+              <a href="" class="hover:text-gradient text-3xl" ><i class=" fa-brands fa-linkedin"></i></a>
+              <a href="" class="hover:text-gradient text-3xl" ><i class=" fa-brands fa-instagram"></i></a>
+              <a href="" class="hover:text-gradient text-3xl" ><i class=" fa-brands fa-twitter "></i></a>
+              </div>
           </div>
-        </div>
+          </div>
       </div>
     </div>
-    <div class="container mx-auto px-4">
-      <div class="row">
-        
-        <div class="w-full border-gray-700 border-b-2 py-4">
-        </div>
-
-      </div>
-    </div>
-    <div class="container mx-auto px-4 py-6">
+    <div class="bg-color-2">
+    <div class="container mx-auto px-4  ">
         <div class="row">
-          <div class="w-full md:w-1/2 px-4 py-2">
-            <p> <span class="pr-2"><i class="fa-regular fa-copyright "></i></span> All rights reserved</p>
-          </div>
-          <div class="w-full md:w-1/2 px-4">
-            <div class="flex flex-wrap py-2 md:justify-end space-x-5 ">
-              <a href="" class="hover:text-gradient " ><i class="fa-xl fa-brands fa-twitter"></i></a>
-              <a href="" class="hover:text-gradient " ><i class="fa-xl fa-brands fa-linkedin"></i></a>
-              <a href="" class="hover:text-gradient " ><i class="fa-xl fa-brands fa-square-facebook"></i></a>
-              <a href="" class="hover:text-gradient " ><i class="fa-xl fa-brands fa-instagram"></i></a>
-            </div>
-          </div>
+        <div class="w-full border-gray-500 border-b-2 py-4">
         </div>
+        </div>
+    </div>
+    </div>
+    <div class="bg-color-2">
+    <div class="container mx-auto px-4 py-4 ">
+        <div class="row">
+        <div class="w-full text-center">
+            <p class="font-semibold"> <span class="pr-2"><i class="fa-regular fa-copyright "> </i> 2023</span> All rights reserved by <a href="index.html" class="text-lg hover:text-gradient ">Logic Line.</a></p>
+        </div>
+        </div>
+    </div>
     </div>
     <!-- footer section ends -->
 
@@ -719,16 +667,25 @@
       $(document).ready(function(){
         $('.homeslider').slick({
             infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
             prevArrow: $('.arr1'),
             nextArrow: $('.arr2'),
             responsive: [
                   {
+                    breakpoint: 1024,
+                    settings: {
+                      slidesToShow: 3,
+                      slidesToScroll: 1
+                    }
+                  },
+                  {
                     breakpoint: 768,
                     settings: {
                       slidesToShow: 2,
-                      slidesToScroll: 2
+                      slidesToScroll: 1
                     }
                   },
                   {

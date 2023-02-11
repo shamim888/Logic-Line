@@ -143,4 +143,15 @@
  .nav-bar a:hover::before {
   width: 100%;
  }
+
+ .custom-bg-1{
+  background-image: url("../image/contact-bg.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.custom-bg-2{
+  background-image: url("../image/bg3.jpg");
+  
+}
 }
